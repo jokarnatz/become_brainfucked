@@ -1,0 +1,64 @@
+
+/* <tag> modifications*/
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #279E6E;
+    height: 20vh;
+}
+
+main {
+    height: 60vh;
+    background-color: #9E3327;
+}
+
+footer {
+    background-color: #279E6E;
+    height: 20vh; 
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    font-family: "Roboto-serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-variation-settings: 
+        "wdth" 100,
+        "GRAD" 0;
+        font-size: 32px;
+        color: #9E2792;
+        letter-spacing: 0.05em;
+}
+
+/* .classes */
+.ft_font {
+    font-family: "Roboto-serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-variation-settings: 
+        "wdth" 100,
+        "GRAD" 0;
+        font-size: 32px;
+        color: #9E2792;
+        letter-spacing: 6em;
+        margin-right: -120px;
+}
+
+.main_fnt {
+    font-family: "Roboto-serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-variation-settings: 
+        "wdth" 100,
+        "GRAD" 0;
+        font-size: 36px;
+        color: #279E6E;
+        letter-spacing: 1em;
+    display: inline;
+    padding: 12px 0px 12px 12px;
+}
