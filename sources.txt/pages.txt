@@ -1,0 +1,30 @@
+<a title="ZZT32, Public domain, via Wikimedia Commons" /*href="https://commons.wikimedia.org/wiki/File:ASCII-Table.svg"*/>
+    <img class="tbl_img" width="512" alt="ASCII-Table" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/ASCII-Table.svg/512px-ASCII-Table.svg.png?20221024154404">
+</a>
+
+
+
+<span>    
+        [ <br><br>
+        + <br><br>
+        - <br><br>
+        < <br>
+</span>
+<span>
+    begining of a while loop<br><br>
+    increasing the value of the current memory-cell<br><br>
+    decreasing the value of the current memory-cell<br><br>
+    pointing to the next memory cell to the left<br>
+</span>
+    <span> 
+        > <br><br>
+        . <br><br>
+        , <br><br>
+        ] <br>
+    </span>
+    <span>
+        pointing to the next memory-cell to the right<br><br>
+        output of the current cells value<br><br>
+        input into the current memory-cell<br><br>
+        end of a while loop<br><br>
+    </span>

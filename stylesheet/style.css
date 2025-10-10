@@ -35,7 +35,15 @@ a:active {
         letter-spacing: 0.05em;
 }
 
+span {
+    padding: 12px;
+}
+
+h1 {
+    animation: runIn 1s ease-in-out forwards;
+}
 /* .classes */
+
 .ft_font {
     font-family: "Roboto-serif", serif;
         font-optical-sizing: auto;
@@ -61,4 +69,20 @@ a:active {
         letter-spacing: 1em;
     display: inline;
     padding: 12px 0px 12px 12px;
+}
+
+.main_fnt2 {
+    font-family: "Roboto-serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-variation-settings: 
+        "wdth" 100,
+        "GRAD" 0;
+        font-size: 24px;
+        color: #279E6E;
+        letter-spacing: 0.25em;   
+}
+
+.tbl_img {
+    background-color: transparent;
 }
