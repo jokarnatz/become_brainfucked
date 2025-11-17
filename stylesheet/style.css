@@ -5,17 +5,14 @@ body {
 }
 
 header {
-    background-color: #279E6E;
     height: 20vh;
 }
 
 main {
     height: 60vh;
-    background-color: #9E3327;
 }
 
 footer {
-    background-color: #279E6E;
     height: 20vh;
 }
 
@@ -30,7 +27,6 @@ a:active {
         "wdth" 100,
         "GRAD" 0;
     font-size: 32px;
-    color: black;
     letter-spacing: 0.05em;
 }
 
@@ -53,7 +49,6 @@ h1 {
         "wdth" 100,
         "GRAD" 0;
     font-size: 32px;
-    color: black;
     letter-spacing: 6em;
     margin-right: -120px;
 }
@@ -66,7 +61,6 @@ h1 {
         "wdth" 100,
         "GRAD" 0;
     font-size: 36px;
-    color: black;
     letter-spacing: 1em;
     display: inline;
     padding: 12px 0px 12px 12px;
@@ -80,12 +74,80 @@ h1 {
         "wdth" 100,
         "GRAD" 0;
     font-size: 24px;
-    color: black;
     letter-spacing: 0.25em;
     display: inline;
     padding: 12px 0px 12px 12px;
 }
 
-.tbl_img {
-    background-color: transparent;
+.syntax_hd {
+    font-family: "Roboto-serif", serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
 }
+
+/* IDs */
+
+#code-input {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+#user-input {
+    margin: 20px;
+}
+
+#run-code {
+    margin: 20px;
+}
+
+#form-label {
+    margin: 20px;
+}
+
+header, .hd_nav {
+  background: #000;
+  color: #fff;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+footer, .ft_txt {
+  background: #000;
+  color: #fff;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.hd_nav img {
+  background: #fff;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.hd_nav a:link,
+.hd_nav a:visited,
+.hd_nav a:active,
+.hd_nav a:focus {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.hd_nav a:hover {
+  color: #000 !important;
+  background: #fff !important;
+  border-radius: 2px;
+}
+
+.main:hover, main:hover {
+  background: #000 !important;
+  color: #fff !important;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.main:hover .hd_nav a,
+main:hover .hd_nav a {
+  color: #000 !important;
+  background: #fff !important;
+}
+

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../stylesheet/style.css">
   <link rel="stylesheet" href="../stylesheet/layout.css">
 </head>
-
 <body>
   <header class="hd_nav">
     <a title="BenjStaw, CC0, via Wikimedia Commons" href="../index.html">
@@ -19,37 +18,18 @@
     <a href="bf_interpreter.html">BRAINFUCK interpreter</a>
     <a href="bf_ressources.html">BRAINFUCK ressources</a>
   </header>
-
-  <main class="main main_fnt2">
-    <span>
-      <br><br>
-      [ <br><br><br>
-      + <br><br><br>
-      - <br><br><br>
-      < <br>
-    </span>
-    <span>
-      <h1 class="syntax_hd">BRAINFUCK SYNTAX</h1><br><br><br>
-      begining of a while loop<br><br><br>
-      increasing the current memory-cells value<br><br><br>
-      decreasing current memory-cells value<br><br><br>
-      pointing to the next memory cell to the left<br><br>
-    </span>
-    <span>
-      <br><br><br>
-      > <br><br><br>
-      . <br><br><br>
-      , <br><br><br>
-      ] <br><br>
-    </span>
-    <span>
-      <br><br><br>
-      pointing to the next memory-cell to the right<br><br><br>
-      output of the current cells value<br><br><br>
-      input into the current memory-cell<br><br><br>
-      end of a while loop<br><br>
-    </span>
-  </main>
+    <main class="main">
+    <form id="code_input">
+        <label for="code" id="form-label">Code:</label>
+        <button type="submit" id="run-code">Run code</button><br>
+        <textarea id="code-input" name="BRAINFUCK-CODE" rows="30" cols="30"></textarea>
+    </form>
+    <form id="user_input">
+        <label for="user_input" id="form-label">Your input</label><br>
+        <textarea id="user-input" name="user-input" rows="10" cols=""10></textarea><br>
+        <label id="form-label">Brainfuck will read one character per input.<br>Seperate values with comma</label>
+    </form>
+    </main>
   <section class="ft_font">
     <footer class="ft_txt">
       <span>[ + - &lt;</span>
@@ -58,5 +38,4 @@
   </section>
   <script src="../script/hover.js"></script>  
 </body>
-
 </html>
