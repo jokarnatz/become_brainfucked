@@ -5,11 +5,11 @@ body {
 }
 
 header {
-    height: 20vh;
+    height: 15vh;
 }
 
 main {
-    height: 60vh;
+    height: 65vh;
 }
 
 footer {
@@ -30,6 +30,7 @@ a:active {
     letter-spacing: 0.05em;
 }
 
+
 span {
     padding: 12px;
 }
@@ -39,7 +40,15 @@ h1 {
     white-space: nowrap;
 }
 
+textarea {
+    resize: none;
+}
+
 /* .classes */
+
+.grey-bg {
+    background-color: grey;
+}
 
 .ft_font {
     font-family: "Roboto-serif", serif;
@@ -92,19 +101,37 @@ h1 {
 #code-input {
     height: 300px;
     width: 300px;
-    margin: 20px;
+    margin: 10px 0px 0px 0px;
 }
 
 #user-input {
-    margin: 20px;
+    margin: 10px 0px 0px 0px;
 }
 
 #run-code {
-    margin: 20px;
+    margin: 10px 0px 0px 0px;
 }
 
-#form-label {
-    margin: 20px;
+#form-label-code {
+    margin: 10px 0px 0px 0px;
+}
+#form-label-input {
+    margin: 10px 0px 0px 0px;
+}
+
+#form-label-hint {
+    font-size: 12px;
+}
+
+#output {
+  color: #000;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  min-height: 2em;
+  font-size: 16px;
+  margin-top: 10px;
+  white-space: pre-wrap;
 }
 
 header, .hd_nav {

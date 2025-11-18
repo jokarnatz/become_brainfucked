@@ -20,14 +20,13 @@
   </header>
     <main class="main">
     <form id="code_input">
-        <label for="code" id="form-label">Code:</label>
-        <button type="submit" id="run-code">Run code</button><br>
-        <textarea id="code-input" name="BRAINFUCK-CODE" rows="30" cols="30"></textarea>
-    </form>
-    <form id="user_input">
-        <label for="user_input" id="form-label">Your input</label><br>
-        <textarea id="user-input" name="user-input" rows="10" cols=""10></textarea><br>
-        <label id="form-label">Brainfuck will read one character per input.<br>Seperate values with comma</label>
+        <label for="user_input" id="form-label-input">INPUT:</label>    
+        <textarea id="user-input" name="user-input" rows="1" cols="34"></textarea><br>
+        <label id="form-label-hint" class="grey-bg">Brainfuck will read one character per input character (",") from the CODE section.<br>Seperate values with [space].</label><br>
+        <label for="code" id="form-label-code">CODE:</label><br>
+        <textarea id="code-input" name="BRAINFUCK-CODE" rows="30" cols="30"></textarea><br>
+        <button id="run-code">Run code</button><br>
+        <pre id="output"></pre>
     </form>
     </main>
   <section class="ft_font">
@@ -36,6 +35,7 @@
       <span>&gt; . , ]</span>
     </footer>
   </section>
-  <script src="../script/hover.js"></script>  
+  <script src="../script/hover.js"></script>
+  <script src="../script/interpreter_logik.js"></script>  
 </body>
 </html>
