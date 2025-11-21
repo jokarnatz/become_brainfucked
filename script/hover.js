@@ -24,53 +24,15 @@ mains.forEach(main => {
           link.style.display = 'block';
           const a = link.querySelector('a');
           if (a) a.style.color = '#fff';
-          // Header-Farbe beim Link-Hover setzen
-          link.addEventListener('mouseenter', () => {
-            headers.forEach(header => {
-              header.style.setProperty('color', '#000', 'important');
-              header.querySelectorAll('a').forEach(a => {
-                a.style.setProperty('color', '#000', 'important');
-                // Setze auch für :visited und :active
-                a.addEventListener('mousedown', () => {
-                  a.style.setProperty('color', '#000', 'important');
-                });
-                a.addEventListener('mouseup', () => {
-                  a.style.setProperty('color', '#000', 'important');
-                });
-                a.addEventListener('click', () => {
-                  setTimeout(() => {
-                    a.style.setProperty('color', '#000', 'important');
-                  }, 10);
-                });
-              });
-            });
-          });
-          link.addEventListener('mouseleave', () => {
-            headers.forEach(header => {
-              header.style.setProperty('color', '#fff', 'important');
-              header.querySelectorAll('a').forEach(a => {
-                a.style.setProperty('color', '#fff', 'important');
-                // Setze auch für :visited und :active
-                a.addEventListener('mousedown', () => {
-                  a.style.setProperty('color', '#fff', 'important');
-                });
-                a.addEventListener('mouseup', () => {
-                  a.style.setProperty('color', '#fff', 'important');
-                });
-                a.addEventListener('click', () => {
-                  setTimeout(() => {
-                    a.style.setProperty('color', '#fff', 'important');
-                  }, 10);
-                });
-              });
-            });
-          });
         });
         main.style.backgroundColor = '#000';
         main.style.color = '#fff';
         headers.forEach(header => {
           header.style.backgroundColor = '#fff';
           header.style.color = '#000';
+          header.querySelectorAll('a').forEach(a => {
+            a.style.setProperty('color', '#000', 'important');
+          });
         });
         footers.forEach(footer => {
           footer.style.backgroundColor = '#fff';
@@ -90,10 +52,53 @@ mains.forEach(main => {
         headers.forEach(header => {
           header.style.backgroundColor = '#000';
           header.style.color = '#fff';
+          header.querySelectorAll('a').forEach(a => {
+            a.style.setProperty('color', '#fff', 'important');
+          });
         });
         footers.forEach(footer => {
           footer.style.backgroundColor = '#000';
           footer.style.color = '#fff';
+        });
+      });
+      // Links im Main nur beim Hover über Main anzeigen
+      main.addEventListener('mouseover', () => {
+        links.forEach(link => {
+          link.style.display = 'block';
+        });
+      });
+      main.addEventListener('mouseout', () => {
+        links.forEach(link => {
+          link.style.display = 'none';
+        });
+      });
+      // Fallback: Verstecke Links, wenn Maus außerhalb von Main ist
+      document.addEventListener('mousemove', (e) => {
+        const rect = main.getBoundingClientRect();
+        if (
+          e.clientX < rect.left ||
+          e.clientX > rect.right ||
+          e.clientY < rect.top ||
+          e.clientY > rect.bottom
+        ) {
+          links.forEach(link => {
+            link.style.display = 'none';
+          });
+        }
+      });
+      // Sichtbarkeit der Links zurücksetzen, wenn Header oder Footer betreten wird
+      headers.forEach(header => {
+        header.addEventListener('mouseenter', () => {
+          links.forEach(link => {
+            link.style.display = 'none';
+          });
+        });
+      });
+      footers.forEach(footer => {
+        footer.addEventListener('mouseenter', () => {
+          links.forEach(link => {
+            link.style.display = 'none';
+          });
         });
       });
     }
