@@ -28,6 +28,7 @@ a:active {
         "GRAD" 0;
     font-size: 32px;
     letter-spacing: 0.05em;
+    color: inherit;
 }
 
 
@@ -152,29 +153,14 @@ footer, .ft_txt {
   border-radius: 4px;
 }
 
-.hd_nav a:link,
-.hd_nav a:visited,
-.hd_nav a:active,
-.hd_nav a:focus {
-  color: #fff !important;
-  background: transparent !important;
-}
-
-.hd_nav a:hover {
-  color: #000 !important;
-  background: #fff !important;
-  border-radius: 2px;
+.hd_nav a {
+  color: inherit;
+  font-size: 24px !important;
 }
 
 .main:hover, main:hover {
   background: #000 !important;
   color: #fff !important;
   transition: background-color 0.4s, color 0.4s;
-}
-
-.main:hover .hd_nav a,
-main:hover .hd_nav a {
-  color: #000 !important;
-  background: #fff !important;
 }
 

@@ -2,10 +2,10 @@
 
 document.getElementById('run-code').addEventListener('click', function(event) {
     event.preventDefault();
-    let code = document.getElementById('code-input').value;
     let userInput = document.getElementById('user-input').value;
-    let codeTokenArray = createTokenArray(code);
+    let code = document.getElementById('code-input').value;
     let userInputArray = createInputArray(userInput);
+    let codeTokenArray = createTokenArray(code);
     let output = becomeBrainfucked(codeTokenArray, userInputArray);
     document.getElementById('output').textContent = output;
 });    
